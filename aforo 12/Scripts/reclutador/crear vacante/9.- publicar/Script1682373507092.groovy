@@ -28,5 +28,9 @@ WebUI.callTestCase(findTestCase('reclutador/crear vacante/8.- vacante6'), [:], F
 
 response = WS.sendRequest(findTestObject('reclutador/crear vacantes/publicar'))
 
+statusCode = WS.getResponseStatusCode(response)
+
+println(statusCode)
+
 WS.verifyResponseStatusCode(response, 200)
 
