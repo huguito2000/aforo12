@@ -20,8 +20,6 @@ import groovy.json.JsonOutput as JsonOutput
 import groovy.json.JsonSlurper as JsonSlurper
 import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 
-WebUI.callTestCase(findTestCase('reclutador/crear vacante/9.- publicar'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.callTestCase(findTestCase('candidato/registro/formulario 2'), [:], FailureHandling.STOP_ON_FAILURE)
 
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 1'))
@@ -36,6 +34,40 @@ GlobalVariable.postulacionId = response.getResponseText()
 
 println(GlobalVariable.postulacionId)
 
+response = WS.sendRequest(findTestObject('candidato/postulacion/cuestionario'))
+
+statusCode = WS.getResponseStatusCode(response)
+
+println(statusCode)
+
+WS.verifyResponseStatusCode(response, 200)
+
+responseText = response.getResponseText()
+
+println(responseText)
+
+json = new JsonSlurper().parseText(responseText)
+
+json = json.content.questionId
+
+println(json)
+
+codigo = json.sort()
+
+println(codigo)
+
+println(codigo[0])
+
+GlobalVariable.questionId0 = (codigo[0])
+
+println(codigo[1])
+
+GlobalVariable.questionId1 = (codigo[1])
+
+println(codigo[2])
+
+GlobalVariable.questionId2 = (codigo[2])
+
 response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 2'))
 
 statusCode = WS.getResponseStatusCode(response)
@@ -48,8 +80,7 @@ responseText = response.getResponseText()
 
 println(responseText)
 
-
-response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 2'))
+response = WS.sendRequest(findTestObject('candidato/postulacion/postulacion 3'))
 
 statusCode = WS.getResponseStatusCode(response)
 
@@ -60,5 +91,4 @@ WS.verifyResponseStatusCode(response, 200)
 responseText = response.getResponseText()
 
 println(responseText)
-
 
