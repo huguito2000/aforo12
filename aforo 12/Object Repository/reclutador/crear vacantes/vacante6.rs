@@ -19,7 +19,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;recruiters\&quot;: [\n        {\n            \&quot;Notifications\&quot;: true,\n            \&quot;type\&quot;: \&quot;AUXILIAR\&quot;,\n            \&quot;recruiterId\&quot;: \&quot;2c9f9364863282ff01865b8cf851008d\&quot;\n        }\n    ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;recruiters\&quot;: [\n        {\n            \&quot;Notifications\&quot;: true,\n            \&quot;type\&quot;: \&quot;AUXILIAR\&quot;,\n            \&quot;recruiterId\&quot;: \&quot;2c9f906e87c3f5280187c443c25b0010\&quot;\n        }\n    ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

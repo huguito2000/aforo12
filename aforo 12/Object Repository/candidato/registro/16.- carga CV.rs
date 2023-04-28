@@ -15,7 +15,6 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
@@ -25,7 +24,7 @@
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;file&quot;,
-      &quot;value&quot;: &quot;/Users/huguito/Desktop/1485.pdf&quot;,
+      &quot;value&quot;: &quot;/Users/huguito/Downloads/05. Sistemas automatizados Autor Leonardo Avila.pdf&quot;,
       &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;application/pdf&quot;
     }

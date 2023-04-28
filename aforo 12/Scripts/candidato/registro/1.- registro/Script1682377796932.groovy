@@ -20,7 +20,7 @@ import groovy.json.JsonOutput as JsonOutput
 import groovy.json.JsonSlurper as JsonSlurper
 import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 
-def now = new Date().format('ddhhmm')
+def now = new Date().format('ddhhmmss')
 
 email = (('aforo' + now) + '@yopmail.com')
 

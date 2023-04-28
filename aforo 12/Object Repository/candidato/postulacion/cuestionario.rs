@@ -15,7 +15,6 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
@@ -33,7 +32,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://pre.micros.involverh.com.mx/candidate/candidate/postulation/question?page=0&amp;processId=${GlobalVariable.postulacionId}&amp;questionnaire=AREA_SPECIALTY&amp;size=100</restUrl>
+   <restUrl>https://${url}.micros.involverh.com.mx/candidate/candidate/postulation/question?page=0&amp;processId=${GlobalVariable.postulacionId}&amp;questionnaire=AREA_SPECIALTY&amp;size=100</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -42,6 +41,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.url</defaultValue>
+      <description></description>
+      <id>cae426c0-4098-44f1-9be6-ed3dc9d6bd2f</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

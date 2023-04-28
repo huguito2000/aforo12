@@ -34,7 +34,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer ${GlobalVariable.token}</value>
-      <webElementGuid>e2af176e-3ec7-4f1f-aee2-9104e4bccc2b</webElementGuid>
+      <webElementGuid>16defb5f-420c-4f97-8ff0-8644377bde90</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
